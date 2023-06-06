@@ -18,8 +18,13 @@ useEffect(()=>{
 
   const handleSubmit = (values) => {
     onSubmit(values);
-    Formik.resetForm();
+    resetForm();
   };
+
+  const resetForm = () =>{
+    setName('');
+    setNumber('')
+  }
 
 
 
