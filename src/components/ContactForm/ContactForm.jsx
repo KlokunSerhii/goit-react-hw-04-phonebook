@@ -18,14 +18,9 @@ useEffect(()=>{
 
   const handleSubmit = (values) => {
     onSubmit(values);
-    resetForm();
-  };
-
-  const resetForm = () =>{
     setName('');
     setNumber('')
-  }
-
+  };
 
 
     return (
