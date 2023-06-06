@@ -71,7 +71,3 @@ export const Button = styled.button`
     }
   }
 `;
-export const Div = styled.div`
-  font-size: 20px;
-  color: #fc0303;
-`;
