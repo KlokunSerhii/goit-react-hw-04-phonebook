@@ -24,7 +24,7 @@ useEffect(()=>{
 
 
     return (
-      <Formik initialValues={{ name, number }} onSubmit={handleSubmit}>
+      <Formik initialValues={{ name, number }} onSubmit={handleSubmit()}>
         <Forma>
           <Label>
             <Input
