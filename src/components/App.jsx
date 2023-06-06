@@ -52,7 +52,7 @@ const App = () => {
   return (
     <Div>
       <Title>Phonebook</Title>
-      <ContactForm onSubmit={handleSubmit()} />
+      <ContactForm onSubmit={handleSubmit} />
       <TitleList>Contacts</TitleList>
       <Filter onChange={changeFilter} value={filter} />
       <ContactList contacts={visibleFilters()} onDelete={deleteContacts} />
