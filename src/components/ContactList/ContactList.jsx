@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
 import { Button, Li, Ul } from './ContactList.styled';
-import { HiMinusCircle } from 'react-icons/hi';
+import { BsFillPersonDashFill, BsPersonCircle } from 'react-icons/bs';
 
 const ContactList = ({ contacts, onDelete }) => {
   return (
     <Ul>
       {contacts.map(({ id, name, number }) => (
         <Li key={id}>
+          <BsPersonCircle />
           {name} : {number}
           <Button onClick={() => onDelete(id)} aria-label="Delete contact">
-            <HiMinusCircle />
+            <BsFillPersonDashFill />
           </Button>
         </Li>
       ))}

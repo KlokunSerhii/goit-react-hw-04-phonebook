@@ -26,6 +26,6 @@ export const Input = styled.input`
   border: 1px solid black;
 
   &:focus {
-    border: 3px solid #07cdfa;
+    border: 4px solid #454141;
   }
 `;

@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { nanoid } from 'nanoid';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import ContactForm from './ContactForm';
 import ContactList from './ContactList';
 import Filter from './Filter';
@@ -50,6 +52,11 @@ const App = () => {
 
   const deleteContacts = id => {
     setContacts(contacts.filter(contact => contact.id !== id));
+    toast.success('Сontact deleted!', {
+      position: 'top-center',
+      autoClose: 1500,
+      theme: 'dark',
+    });
   };
 
   return (
@@ -59,6 +66,7 @@ const App = () => {
       <TitleList>Contacts</TitleList>
       <Filter onChange={changeFilter} value={filter} />
       <ContactList contacts={visibleFilters()} onDelete={deleteContacts} />
+      <ToastContainer />
     </Div>
   );
 };

@@ -6,7 +6,12 @@ export const Forma = styled(Form)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ebf0eb;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 35%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
   border: 1px solid;
   border-radius: 7px;
   padding: 20px 20px 80px 20px;
@@ -31,7 +36,7 @@ export const Input = styled(Field)`
   outline: none;
   border: 1px solid black;
   &:focus {
-    border: 3px solid #00fa00;
+    border: 4px solid #454141;
   }
 `;
 
@@ -45,13 +50,28 @@ export const Button = styled.button`
   font-size: 16px;
   font-weight: 700;
   border: none;
-  background-color: #00fa00;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 35%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
   svg {
     width: 40px;
     height: 40px;
-    color: #ffffff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 35%,
+      rgba(0, 0, 0, 1) 100%
+    );
+
+    color: rgb(152, 140, 140);
+    &: hover {
+      color: #454141;
+    }
   }
-  &: hover {
-    background-color: #eefa05;
-  }
+`;
+export const Div = styled.div`
+  font-size: 20px;
+  color: #fc0303;
 `;
