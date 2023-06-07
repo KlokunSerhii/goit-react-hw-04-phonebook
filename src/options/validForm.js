@@ -10,10 +10,10 @@ const validNumber =
 export const SignupSchema = Yup.object().shape({
     name: Yup.string()
       .min(2, 'Too Short!')
-      .matches(validName, ' Please enter a Name')
+      .matches(validName, ' Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer')
       .required('Please enter a Name'),
     number: Yup.string()
       .min(5, 'Too Short!')
-      .matches(validNumber, 'Please enter a Number')
+      .matches(validNumber, 'Phone number must be digits and can contain spaces, dashes, parentheses and can start with +')
       .required('Please enter a Number'),
   });
