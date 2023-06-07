@@ -71,6 +71,6 @@ export const Button = styled.button`
     }
   }
 `;
-export const Div = styled.ErrorMessage`
+export const Div = styled(ErrorMessage)`
  color: #ffffff
 `;
