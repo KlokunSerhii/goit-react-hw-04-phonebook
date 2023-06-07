@@ -1,7 +1,6 @@
+import { BsFillPersonDashFill, BsPersonCircle } from 'react-icons/bs';
 import PropTypes from 'prop-types';
 import { Button, Li, Ul } from './ContactList.styled';
-import { BsFillPersonDashFill, BsPersonCircle } from 'react-icons/bs';
-
 const ContactList = ({ contacts, onDelete }) => {
   return (
     <Ul>

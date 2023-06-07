@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { Label, Input } from './Filter.styled';
 import { HiSearch } from 'react-icons/hi';
+import { Label, Input } from './Filter.styled';
 const Filter = ({ value, onChange }) => {
   return (
     <Label>

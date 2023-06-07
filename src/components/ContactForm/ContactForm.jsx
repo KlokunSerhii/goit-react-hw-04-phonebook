@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
 import { Formik, ErrorMessage } from 'formik';
-import { Label, Forma, Input, Button } from './ContactForm.styled';
 import { BsFillPersonPlusFill } from 'react-icons/bs';
 import { toast } from 'react-toastify';
 import { toastOptions } from '../../options/toastOptions';
 import { SignupSchema } from '../../options/validForm';
-
+import { Label, Forma, Input, Button } from './ContactForm.styled';
 function ContactForm({ onSubmit }) {
   const name = '';
   const number = '';
