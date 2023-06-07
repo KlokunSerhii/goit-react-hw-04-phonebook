@@ -10,8 +10,8 @@ function ContactForm({ onSubmit }) {
   const number = '';
 
   const handleSubmit = (values, { resetForm }) => {
-    onSubmit(values);
     toast.success('Сontact added', toastOptions);
+    onSubmit(values);
     resetForm();
   };
 
