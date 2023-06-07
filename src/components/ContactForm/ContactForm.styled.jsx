@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Form, Field, ErrorMessage } from 'formik';
+import { Form, Field } from 'formik';
 
 export const Forma = styled(Form)`
   position: relative;
@@ -8,7 +8,7 @@ export const Forma = styled(Form)`
   align-items: center;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 35%,
+    rgba(255, 255, 255, 0) 0%,
     rgba(0, 0, 0, 1) 100%
   );
 
@@ -70,7 +70,4 @@ export const Button = styled.button`
       color: #454141;
     }
   }
-`;
-export const Div = styled(ErrorMessage)`
- color: #ffffff
 `;

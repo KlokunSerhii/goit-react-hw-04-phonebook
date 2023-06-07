@@ -15,8 +15,8 @@ export const Div = styled.div`
   padding: 0 10px;
   background: linear-gradient(
     90deg,
-    rgba(152, 140, 140, 0.9276960784313726) 0%,
-    rgba(0, 36, 11, 1) 100%
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
   );
 
   padding-bottom: 20px;
