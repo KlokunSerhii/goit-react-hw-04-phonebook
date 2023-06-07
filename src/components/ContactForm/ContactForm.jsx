@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Formik, ErrorMessage } from 'formik';
 import { Label, Forma, Input, Button } from './ContactForm.styled';
@@ -7,8 +6,8 @@ import * as Yup from 'yup';
 import { toast } from 'react-toastify';
 
 function ContactForm({ onSubmit }) {
-  const [name] = useState('');
-  const [number] = useState('');
+  const name = '';
+  const number = '';
 
   const errorOptions = {
     position: 'top-center',
