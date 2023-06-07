@@ -9,11 +9,9 @@ import { Title, Div, TitleList } from './App.styled';
 import { useLocalStorage } from '../huks/useLocalStorage';
 import { toastOptions } from '../options/toastOptions';
 
-const defaultValue = [];
-
 const App = () => {
   const [filter, setFilter] = useState('');
-  const [contacts, setContacts] = useLocalStorage('contact', defaultValue);
+  const [contacts, setContacts] = useLocalStorage('contact', []);
 
   const handleSubmit = ({ name, number }) => {
     const newContacts = {
