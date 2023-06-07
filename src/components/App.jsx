@@ -40,7 +40,7 @@ const App = () => {
 
   const deleteContacts = id => {
     setContacts(contacts.filter(contact => contact.id !== id));
-    toast.success('Сontact deleted!', toastOptions);
+    toast.error('Сontact deleted!', toastOptions);
   };
 
   return (
