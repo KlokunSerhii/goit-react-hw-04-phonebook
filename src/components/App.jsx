@@ -22,9 +22,12 @@ const App = () => {
     const find = contacts.find(
       element => element.name.toLowerCase() === name.toLowerCase()
     );
-    find
-      ? alert(find.name + ' is already in contacts.')
-      : setContacts(prevContacts => [newContacts, ...prevContacts]);
+    if (!find) {
+      toast.success('Contact added', toastOptions);
+      setContacts(prevContacts => [newContacts, ...prevContacts]);
+      return;
+    }
+    toast.error(' Contact already in contacts.', toastOptions);
   };
 
   const changeFilter = e => {

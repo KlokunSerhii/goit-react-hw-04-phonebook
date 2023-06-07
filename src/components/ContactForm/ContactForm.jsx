@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import { Formik, ErrorMessage } from 'formik';
 import { BsFillPersonPlusFill } from 'react-icons/bs';
-import { toast } from 'react-toastify';
-import { toastOptions } from '../../options/toastOptions';
 import { SignupSchema } from '../../options/validForm';
 import { Label, Forma, Input, Button } from './ContactForm.styled';
 function ContactForm({ onSubmit }) {
@@ -10,7 +8,6 @@ function ContactForm({ onSubmit }) {
   const number = '';
 
   const handleSubmit = (values, { resetForm }) => {
-    toast.success('Сontact added', toastOptions);
     onSubmit(values);
     resetForm();
   };
