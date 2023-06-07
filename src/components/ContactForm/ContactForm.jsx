@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { Formik, ErrorMessage } from 'formik';
-import { Label, Forma, Input, Button } from './ContactForm.styled';
+import { Formik } from 'formik';
+import { Label, Forma, Input, Button,Div } from './ContactForm.styled';
 import { BsFillPersonPlusFill } from 'react-icons/bs';
 import { toast } from 'react-toastify';
 import { toastOptions } from '../../options/toastOptions'
@@ -27,11 +27,11 @@ function ContactForm({ onSubmit }) {
         <Label>
           <Input type="text" name="name" placeholder="Name" />
         </Label>
-        <ErrorMessage name="name" />
+        <Div name="name" />
         <Label>
           <Input type="tel" name="number" placeholder="Number" />
         </Label>
-        <ErrorMessage name="number" />
+        <Div name="number" />
         <Button type="submit" aria-label="add contact">
           <BsFillPersonPlusFill />
         </Button>
