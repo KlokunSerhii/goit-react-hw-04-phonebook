@@ -6,7 +6,8 @@ import ContactForm from './ContactForm';
 import ContactList from './ContactList';
 import Filter from './Filter';
 import { Title, Div, TitleList } from './App.styled';
-import {useLocalStorage} from '../huks/huks'
+import {useLocalStorage} from '../huks/useLocalStorage'
+import{toastOptions} from '../options/toastOptions'
 
 const defaultValue = [
   { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -48,11 +49,7 @@ const App = () => {
 
   const deleteContacts = id => {
     setContacts(contacts.filter(contact => contact.id !== id));
-    toast.success('Сontact deleted!', {
-      position: 'top-center',
-      autoClose: 1500,
-      theme: 'dark',
-    });
+    toast.success('Сontact deleted!', toastOptions);
   };
 
   return (
