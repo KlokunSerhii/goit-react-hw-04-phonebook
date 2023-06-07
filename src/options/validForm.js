@@ -11,9 +11,9 @@ export const SignupSchema = Yup.object().shape({
     name: Yup.string()
       .min(2, 'Too Short!')
       .matches(validName, ' Please enter a Name')
-      .required('Required'),
+      .required('Please enter a Name'),
     number: Yup.string()
       .min(5, 'Too Short!')
       .matches(validNumber, 'Please enter a Number')
-      .required('Required'),
+      .required('Please enter a Number'),
   });
